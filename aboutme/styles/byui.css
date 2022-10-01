@@ -9,6 +9,12 @@ a {
   color: white;
   margin: 40px;
 }
+
+#active {
+  background-color: white;
+  color: steelblue;
+}
+
 h1 {
   color: steelblue;
 }
@@ -19,6 +25,12 @@ img {
 p {
   padding: 10px;
 }
+
+.main-para {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
 footer {
   background-color: steelblue;
   color: white;
