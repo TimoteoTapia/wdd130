@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&family=Roboto&display=swap");
+
 body {
   background: #a7c957;
+  font-family: "Roboto", sans-serif, Helvetica;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background: #6a994e;
+}
+
+h2 {
+  margin: 0;
 }
 
 #content {
@@ -17,12 +27,14 @@ header {
 
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 
 nav a {
   text-align: center;
   color: #f2e8cf;
   text-decoration: none;
+  padding: 35px;
 }
 
 nav a:hover {
@@ -31,7 +43,10 @@ nav a:hover {
 }
 
 .home-title {
+  font-family: "Poppins", serif, arial;
   color: black;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 #hero-msg h1,
@@ -50,6 +65,10 @@ main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
   height: 725px;
 }
@@ -59,29 +78,56 @@ main section {
   background: #6a994e;
   color: #f2e8cf;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 .book:hover,
 .join:hover {
   background: #f2e8cf;
   color: #386641;
 }
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid black;
+}
+
 #background {
   background: #386641;
 }
+
+#logo_link {
+  padding-top: 5px;
+}
+
 .msg {
   background: #6a994e;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2 {
   color: white;
+  font-family: "Poppins", serif, arial;
 }
 
 .msg p {
   color: white;
+  font-size: 0.8em;
+  padding-bottom: 15px;
 }
 
 footer {
   background: #386641;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer p {
@@ -99,4 +145,8 @@ footer a {
 
 footer a:hover {
   color: blue;
+}
+
+footer .social img {
+  padding-top: 15px;
 }
