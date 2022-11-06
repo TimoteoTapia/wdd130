@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&family=Roboto&display=swap");
 
 body {
-  background: #a7c957;
+  background: #a7c579;
   font-family: "Roboto", sans-serif, Helvetica;
   font-size: 22px;
   margin: 0;
@@ -16,7 +16,7 @@ h5,
 h6 {
   text-align: center;
   padding: 10px;
-  color: black;
+  color: #436c2b;
   line-height: 15px;
   font-family: "Poppins", sans-serif, Helvetica;
   font-size: 1.2em;
@@ -140,13 +140,13 @@ main section {
 
 .book:hover,
 .join:hover {
-  background: #f2e8cf;
-  color: #386641;
+  background: #a7c579;
+  color: #f2e8cf;
 }
 
 .button-box {
   text-align: center;
-  margin: 5em;
+  margin: 0;
 }
 
 .home-grid {
@@ -213,23 +213,23 @@ main section {
 }
 
 .msg {
-  background: #436c2b;
+  background: #f1e3bc;
   line-height: 1.5em;
-  padding: 35px;
+  padding: 25px;
   grid-column: 6/10;
   grid-row: 6/7;
   box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg h2 {
-  color: white;
+  color: #253b19;
   font-family: "Poppins", serif, arial;
 }
 
 .msg p {
-  color: white;
+  color: #253b19;
   font-size: 0.8em;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 #info {
