@@ -17,9 +17,9 @@ h6 {
   text-align: center;
   padding: 10px;
   color: #436c2b;
-  line-height: 15px;
+  line-height: 1.1em;
   font-family: "Poppins", sans-serif, Helvetica;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #content {
@@ -31,8 +31,8 @@ p {
   text-align: center;
   padding: 10px;
   color: #104266;
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 1.25em;
+  line-height: 1.25em;
   font-family: "Roboto", sans-serif, Helvetica;
 }
 
@@ -48,7 +48,7 @@ nav a {
   color: #f2e8cf;
   text-decoration: none;
   text-align: center;
-  padding: 0.75em 0.75em;
+  padding: 0.5em 0.75em;
   line-height: 1em;
   font-family: "Inconsolata", sans-serif, Helvetica;
   font-size: 1.1em;
@@ -57,6 +57,9 @@ nav a {
 nav a:hover {
   background: #f2e8cf;
   color: #386641;
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: 4px 4px 4px #000000;
 }
 
 #logo_link {
@@ -66,7 +69,8 @@ nav a:hover {
 }
 
 .logo {
-  width: 80px;
+  width: 200px;
+  height: 100px;
   position: relative;
 }
 
@@ -92,28 +96,29 @@ main section {
   font-family: "Poppins", serif, arial;
   color: white;
   font-size: 2.25em;
-  margin-top: 30px;
-}
-
-#hero-img {
-  width: 100%;
+  text-shadow: 3px 3px #000000;
 }
 
 #hero {
   display: grid;
+  text-align: center;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: -100px;
+}
+
+#hero-img {
+  width: 100%;
+  grid-column: 1/11;
+  grid-row: 1/3;
 }
 
 #hero-msg {
   grid-column: 2/3;
-  grid-row: 1/2;
+  grid-row: 1/3;
   text-align: center;
-  margin-top: 100px;
 }
 
 #hero-box {
-  grid-column: 1/4;
+  grid-column: 1/11;
   grid-row: 1/3;
   z-index: -1;
 }
@@ -133,20 +138,22 @@ main section {
   color: #f2e8cf;
   text-decoration: none;
   font-size: 18px;
-  padding: 15px 30px;
+  padding: 15px;
   margin-top: 50px;
   border-radius: 5px;
+  box-shadow: 2px 6px 12px #000000;
 }
 
 .book:hover,
 .join:hover {
   background: #a7c579;
   color: #f2e8cf;
+  box-shadow: 4px 4px 4px #000000;
 }
 
 .button-box {
   text-align: center;
-  margin: 0;
+  margin: 55px;
 }
 
 .home-grid {
@@ -269,6 +276,325 @@ footer .social img {
   padding-top: 15px;
 }
 
+/* Rivers Page */
+
+.rivers_title {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: 5px solid black;
+  font-size: 2.5em;
+  border-radius: 50%;
+  line-height: 1.5em;
+  background-color: #f2e8cf;
+  margin: 10%;
+}
+
+.img_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.rivers_container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  position: relative;
+  z-index: -1;
+}
+
+.img_rivers {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.img_rivers_title {
+  font-size: 1.2em;
+  color: white;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.text_rivers {
+  color: white;
+  top: 0;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-size: 1.2em;
+  margin-top: 120px;
+}
+
+.rocks_container {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 2px solid black;
+  z-index: -1;
+}
+
+.img_rocks {
+  width: 100%;
+  height: 100%;
+}
+
+.img_rocks_title {
+  font-size: 1.2em;
+  color: white;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.text_rocks {
+  color: white;
+  top: 0;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  font-size: 1.2em;
+  margin-top: 120px;
+}
+
+.box_rivers {
+  background-color: #f2e8cf;
+  grid-column: 2/4;
+  grid-row: 5/8;
+  border: 3px solid black;
+}
+
+/* Contac Page */
+
+.hero_contact {
+  padding: 20px;
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.contact_title {
+  grid-column: 2/6;
+  grid-row: 1/3;
+  border: 5px solid black;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  background-color: #f2e8cf;
+  margin: 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.img_01 {
+  grid-column: 1/2;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.img_02 {
+  grid-column: 2/3;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.img_03 {
+  grid-column: 3/4;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.img_04 {
+  grid-column: 4/5;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.img_05 {
+  grid-column: 5/6;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.img_06 {
+  grid-column: 6/7;
+  grid-row: 2/7;
+  height: 120%;
+}
+
+.contact-grid {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.guiders_img {
+  grid-column: 2/6;
+  grid-row: 1/5;
+}
+
+.guiders {
+  transition: 0.5s;
+}
+
+.guiders:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.guiders {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.name_guiders {
+  border: 3px solid black;
+  background-color: #f2e8cf;
+}
+
+.box_contact {
+  background-color: #f2e8cf;
+  grid-column: 1/7;
+  grid-row: 5/6;
+  border: 3px solid black;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+form {
+  /* Center the form on the page */
+
+  width: 420px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #6f7364;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 110px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 110px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+.payment_container {
+  display: block;
+}
+
+.box_info {
+  width: 400px;
+  height: 50%;
+  border: 4px solid black;
+  background-color: #f2e8cf;
+}
+
+.add_info,
+.phone,
+.email {
+  margin: 0;
+}
+
+.add_info {
+  font-size: 120%;
+}
+
+.email {
+  margin-top: -10px;
+}
+
+.pay_text {
+  display: block;
+  color: #000;
+  margin: 10px;
+}
+
+.pay_images {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
 /* "If the max width of the screen gets smaller than 900px,
  then use this CSS instead of what you may have seen above"*/
 @media screen and (max-width: 900px) {
@@ -296,7 +622,7 @@ footer .social img {
   }
   .home-title {
     font-size: 25px;
-    color: #6f7364;
+    color: white;
   }
   .rivers-card,
   .camping-card,
@@ -315,5 +641,46 @@ footer .social img {
   }
   footer {
     margin-top: 25px;
+  }
+
+  /* Rivers Page */
+  .img_rivers,
+  .img_rocks {
+    width: 500px;
+  }
+
+  .text_rivers,
+  .text_rocks {
+    /* height: 100px; */
+    font-size: 0.7em;
+  }
+
+  .contact_title {
+    font-size: 1em;
+  }
+
+  .info {
+    margin: 0 50px;
+  }
+  form {
+    width: 50%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .payment_container {
+    width: 40%;
+  }
+
+  .box_info {
+    width: 200px;
+    font-size: 0.75em;
+  }
+
+  .pay_images {
+    width: 30%;
   }
 }

@@ -4,7 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Contact Us</title>
   </head>
-  <body></body>
+  <body>
+    <div id="content">
+      <header>
+        <a href="index.html" class="" id="logo_link">
+          <img class="logo" src="images/rafinglogo.png" alt="Dry Oar Logo" />
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="site-plan-rafting.html">Site Plan</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <div class="hero_contact">
+        <h2 class="contact_title">Meet Our Rapids Guides</h2>
+        <img class="img_01" src="images/page03_01.jpg" alt="page03_01" />
+        <img class="img_02" src="images/page03_02.jpg" alt="page03_02" />
+        <img class="img_03" src="images/page03_03.jpg" alt="page03_03" />
+        <img class="img_04" src="images/page03_04.jpg" alt="page03_04" />
+        <img class="img_05" src="images/page03_05.jpg" alt="page03_05" />
+        <img class="img_06" src="images/page03_06.jpg" alt="page03_06" />
+      </div>
+      <main class="contact-grid">
+        <div class="guiders_img">
+          <img src="images/page03_guiders.png" alt="guiders" class="guiders" />
+          <h3 class="name_guiders">Liha & Jessica</h3>
+        </div>
+        <div class="box_contact">
+          <h3>Grand Canyon, Arizona</h3>
+          <p class="">
+            This is the grand daddy of all canyons and the grand daddy of all
+            river trips. You will never forget your visit to the Grand Canyon.
+            Grand Canyon river rafting combines world-class whitewater with
+            breathtaking scenery to make one truly unforgettable river
+            experience. The canyon is filled not only with exhilarating
+            whitewater rapids, but with side canyons and ancient indian ruins
+            accessible only by river.
+          </p>
+        </div>
+      </main>
+      <section class="info">
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+        <div class="payment_container">
+          <div class="box_info">
+            <h4 class="add_info">Reserve Your Trip Now</h4>
+            <p class="phone">Phone: 841-512-5113</p>
+            <p class="email">Email: tap@byui.com</p>
+          </div>
+          <p class="pay_text">You Can Pay:</p>
+          <div class="pay_images">
+            <img src="images/visa.PNG" alt="" class="pay_img01" />
+            <img src="images/mastercard.PNG" alt="" class="pay_img02" />
+            <img src="images/paypal.PNG" alt="" class="pay_img03" />
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p id="info">Dry Oar &copy; 2022 - Kevin Tapia WDD130-09</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+          <a target="_blank" href="https://facebook.com">
+            <img src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a target="_blank" href="https://twitter.com">
+            <img src="images/twitter.png" alt="twitter icon" />
+          </a>
+          <a target="_blank" href="https://instagram.com">
+            <img src="images/instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle("moveDown");
+      });
+    </script>
+  </body>
 </html>
