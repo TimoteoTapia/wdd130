@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&display=swap");
+
+body {
+  background: #e9c46a;
+  font-family: "Kaushan", sans-serif, Helvetica;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  padding: 10px;
+  color: #e76f51;
+  line-height: 1.1em;
+  font-family: "Kaushan Script", sans-serif, Helvetica;
+  font-size: 1.5em;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-family: "Comfortaa", sans-serif, Helvetica;
+}
+
+nav {
+  background: #608535;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-align: center;
+  color: White;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em 0.75em;
+  line-height: 1em;
+  font-family: "Comfortaa", sans-serif, Helvetica;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  background: #e76f51;
+  color: White;
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: 4px 4px 4px #000000;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+
+header {
+  background: #608535;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+footer {
+  background: #608535;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.2em;
+  color: #f2e8cf;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  font-size: 0.75em;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
