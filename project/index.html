@@ -20,7 +20,44 @@
           <a href="site-plan.html">site-plan</a>
         </nav>
       </header>
+      <!-- Slideshow container -->
       <div id="hero">
+        <h1 class="home-title">Love your pet and make it happy</h1>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/home01.jpeg" style="width: 100%" />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/cares01.jpeg" style="width: 100%" />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/faq01.jpeg" style="width: 100%" />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <!-- <div>
         <div id="hero-box">
           <img src="images/home01.jpeg" alt="kittens together" id="hero-img" />
         </div>
@@ -31,27 +68,59 @@
             <a href="faq.html" class="book">FAQ</a>
           </div>
         </section>
-      </div>
-      <main>
-        <img src="images/home02.jpg" alt="kittens together" />
-        <p>
+      </div> -->
+      <main class="home-grid">
+        <section class="textImageOne">
+          <div
+            class="textOverImage"
+            style="background-image: url(images/image_text01.jpg)"
+            data-text="A kiiten
           This site is to help you learn about raising newborn kittens and how
-          to help them in their growth process, so this page will help you and
-          provide you with a care process so that you can raise your new pets
-          without complications. This site is made up of other sections where,
-          apart from the general explanation, it will also cover steps to ensure
-          the good upbringing of your new pets and the other section will cover
-          common questions and answers that will support the preparation and
-          resolution of different situations. This site is made up of other
-          sections where, apart from the general explanation, it will also cover
-          steps to ensure the good upbringing of your new pets and the other
-          section will cover common questions and answers that will support the
-          preparation and resolution of different situations. We will focus on
-          their proper diet, also avoiding malnutrition, this is a site in which
-          I hope you can enjoy and you can also read this information as a
-          support to make a decision if you are thinking of adopting a cat or of
-          breeding
-        </p>
+          to help them in their growth process,"
+          ></div>
+        </section>
+        <section class="textImageTwo">
+          <div
+            class="textOverImage textImageTwo"
+            style="background-image: url(images/image_text02.jpg)"
+            data-text="A kiiten
+          This site is to help you learn about raising newborn kittens and how
+          to help them in their growth process,"
+          ></div>
+        </section>
+        <section class="textImageThree">
+          <div
+            class="textOverImage textImageThree"
+            style="background-image: url(images/Image_text03.jpg)"
+            data-text="A kiiten
+          This site is to help you learn about raising newborn kittens and how
+          to help them in their growth process,"
+          ></div>
+        </section>
+        <div id="background"></div>
+        <img class="kittens" src="images/home02.jpg" alt="kittens together" />
+        <section class="msg">
+          <h2>What is the purpose</h2>
+          <p>
+            This site is to help you learn about raising newborn kittens and how
+            to help them in their growth process, so this page will help you and
+            provide you with a care process so that you can raise your new pets
+            <!-- without complications. This site is made up of other sections where,
+            apart from the general explanation, it will also cover steps to
+            ensure the good upbringing of your new pets and the other section
+            will cover common questions and answers that will support the
+            preparation and resolution of different situations. This site is
+            made up of other sections where, apart from the general explanation,
+            it will also cover steps to ensure the good upbringing of your new
+            pets and the other section will cover common questions and answers
+            that will support the preparation and resolution of different
+            situations. We will focus on their proper diet, also avoiding
+            malnutrition, this is a site in which I hope you can enjoy and you
+            can also read this information as a support to make a decision if
+            you are thinking of adopting a cat or of breeding -->
+          </p>
+          <a class="join" href="cares.html">Join Us</a>
+        </section>
       </main>
       <footer>
         <p id="info">Kittens &copy; 2022 - Kevin Tapia WDD130-09</p>
@@ -70,5 +139,6 @@
         </div>
       </footer>
     </div>
+    <script src="slideshow.js"></script>
   </body>
 </html>
