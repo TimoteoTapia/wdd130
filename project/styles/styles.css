@@ -6,7 +6,7 @@
 
 body {
   background: #e9c46a;
-  font-family: "Kaushan", sans-serif, Helvetica;
+  font-family: "Kaushan Script", sans-serif, Helvetica;
   font-size: 22px;
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ nav {
   padding: 1em;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
@@ -68,14 +69,16 @@ nav a:hover {
 }
 
 #logo_link {
+  margin-left: 50px;
   padding-top: 5px;
   justify-self: center;
   align-self: center;
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
+  border-radius: 50%;
+  width: 120px;
+  /* height: 100px; */
   position: relative;
 }
 
@@ -222,6 +225,7 @@ main section {
   grid-column: 2/4;
   grid-row: 2/3;
   margin: 200px 0;
+  text-align: center;
 }
 
 .textImageTwo {
@@ -245,6 +249,9 @@ main section {
   background-size: 100%;
   background-position: center;
   transition: 0.5s;
+  font-size: 1.2em;
+  font-family: "Comfortaa", sans-serif, Helvetica;
+  text-align: center;
 }
 
 .textOverImage:hover {
@@ -303,12 +310,11 @@ main section {
 
 .msg h2 {
   color: white;
-  font-family: "Comfortaa", sans-serif, Helvetica;
 }
 
 .msg p {
   color: white;
-  font-size: 0.8em;
+  font-size: 1em;
   padding-bottom: 5px;
 }
 
@@ -362,16 +368,92 @@ footer .social img {
 }
 
 /* Cares Page */
-.container {
+main article {
   grid-column: 2/10;
   grid-row: 1/5;
 }
 
-.container img {
+.shape-bear {
+  background: url(../images/transparent.png);
   float: left;
+  height: 400px;
+  width: 335px;
+  shape-outside: url(trasnparent.png);
+  margin: 10px;
 }
 
 .boxes {
   grid-column: 2/5;
   grid-row: 7/10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  width: 1100px;
+}
+
+section .card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+section .card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+section .card:hover .box {
+  transform: rotateY(180deg);
+}
+
+section .card .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .card .box .contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+section .card .box .contentBx div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: linear-gradient(45deg, #fe0061, #ffeb3b);
+  transform: translateZ(100px);
+}
+
+section .card .box .contentBx div h2 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+section .card .box .contentBx div p {
+  color: #fff;
+  font-size: 16px;
 }
