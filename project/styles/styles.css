@@ -457,3 +457,179 @@ section .card .box .contentBx div p {
   color: #fff;
   font-size: 16px;
 }
+
+/*FAQ Page*/
+.sign-up-form {
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background: #fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+
+.sign-up-form h1 {
+  color: #1c8adb;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+button {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+.signup-btn {
+  background-color: #1c8adb;
+}
+.insta-btn {
+  background-color: #21afde;
+}
+form a {
+  text-decoration: none;
+}
+form button a {
+  color: white;
+}
+hr {
+  margin-top: 30px;
+  width: 80%;
+}
+.or {
+  background: #fff;
+  width: 50px;
+  margin: -33px auto 10px;
+}
+img {
+  width: 70px;
+  margin-top: -50px;
+}
+form p {
+  font-size: 0.7em;
+  font-family: sans-serif, Helvetica;
+}
+
+.faq-grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-porpuse {
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 30px;
+  grid-column: 2/10;
+  grid-row: 1/4;
+  overflow: auto;
+}
+
+.grid-porpuse img {
+  float: left;
+  border-radius: 50%;
+  width: 450px;
+  height: 350px;
+  shape-outside: url(faq02.jpeg);
+  margin: 10px;
+}
+.card-container {
+  grid-column: 2/10;
+  grid-row: 5/8;
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.first-card {
+  grid-column: 1/2;
+}
+
+.third-card {
+  grid-column: 6/7;
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1,
+.theback h1 {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p,
+.theback p {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
